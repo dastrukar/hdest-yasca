@@ -1,0 +1,9 @@
+nosave bool yasca_showshield = true;
+nosave bool yasca_showspirit = true;
+nosave bool yasca_alwaysshowshield = false;
+nosave bool yasca_alwaysshowspirit = false;
+
+server bool yasca_giveshield = false;
+server int yasca_mode = 0;
+server bool yasca_giveonlyspirit = false;
+server bool yasca_browngiveshield = true;

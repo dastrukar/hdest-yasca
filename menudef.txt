@@ -1,0 +1,26 @@
+OptionValue "YASCAMode"
+{
+	0, "Only Shield Cores"
+	1, "Only Spiritual Armour"
+	2, "Of Spirits and Shields"
+}
+
+OptionMenu "YASCAOptions"
+{
+	Title "YASCA Options"
+	Option "Show shield counter", "yasca_showshield", "YesNo"
+	Option "Show Spiritual Armour counter", "yasca_showspirit", "YesNo"
+	Option "Always show shield counter", "yasca_alwaysshowshield", "YesNo"
+	Option "Always show Spiritual Armour counter", "yasca_alwaysshowspirit", "YesNo"
+
+	StaticText " "
+
+	Option "Spawn mode", "yasca_mode", "YASCAMode"
+	Option "Brownsphere gives Shield Core", "yasca_browngiveshield", "YesNo"
+	Option "Items only give Spiritual Armour", "yasca_giveonlyspirit", "YesNo"
+}
+
+AddOptionMenu "OptionsMenu"
+{
+	Submenu "YASCA Options", "YASCAOptions"
+}
